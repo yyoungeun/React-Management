@@ -97,7 +97,7 @@ class CustomerAdd extends React.Component{
     }
 
     render(){
-        const {classes} = this.props;
+        const {classes} = this.props;  //class변수 초기화
         
         return( //고객 추가 양식
             <div>
