@@ -34,7 +34,7 @@ class CustomerAdd extends React.Component{
         this.addCustomer()
         .then((response) => {
             console.log(response.data);
-            this.props.stateRefresh();
+            this.props.stateRefresh(); //App.js호출
         })
         this.setState({
             file: null,
@@ -45,7 +45,7 @@ class CustomerAdd extends React.Component{
             fileName: '',
             open: false
         })
-        //window.location.reload();
+        //window.location.reload(); //페이지 새로고침
         //this.props.stateRefresh();
     }
 

@@ -129,14 +129,16 @@ class App extends Component {
       completed: 0,
       searchKeyword: ''
     });
-    this.callApi()
+    this.callApi()  //고객 데이터 호출
       .then(res => this.setState({customers: res}))
       .catch(err => console.log(err));
   }
 
+
+  //LifeCycle
   componentDidMount() {
     this.timer =setInterval(this.progress, 20);
-     this.callApi()
+     this.callApi()       //callApi 호출
      .then(res => this.setState({customers: res}))
      .catch(err => console.log(err));
   }
@@ -147,6 +149,7 @@ class App extends Component {
     return body;
   }
 
+  //ProgressBar
   progress = () => {
     const { completed} = this.state;
     this.setState({completed: completed >= 100 ? 0 : completed+1});

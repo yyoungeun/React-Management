@@ -28,7 +28,8 @@ class CustomerDelete extends React.Component{
     }
 
     //api함수
-    deleteCustomer(id) {
+    //삭제 함수
+    deleteCustomer(id) { 
         // /api/customer/7
         const url = '/api/customers/' + id;
         fetch(url, {
