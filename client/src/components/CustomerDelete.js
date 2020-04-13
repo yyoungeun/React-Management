@@ -8,7 +8,7 @@ import Typography from '@material-ui/core/Typography';
 
 class CustomerDelete extends React.Component{
 
-    constructor(props){
+    constructor(props){  //생성자 명시
         super(props);
             this.state = {
             open: false

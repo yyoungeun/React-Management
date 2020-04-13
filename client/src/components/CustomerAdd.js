@@ -120,6 +120,7 @@ class CustomerAdd extends React.Component{
                         <TextField label="직업" ype="text" name="job" value={this.state.job} onChange={this.handleValueChange}/><br/>
                     </DialogContent>
                     <DialogActions>
+                        {/* 고객 데이터를 서버로 보냄 */}
                         <Button variant="contained" color="primary" onClick={this.handleFormSubmit}>추가</Button>
                         <Button variant="outlined" color="primary" onClick={this.handleClose}>닫기</Button>
                     </DialogActions>
